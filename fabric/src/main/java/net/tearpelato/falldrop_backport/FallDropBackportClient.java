@@ -1,4 +1,10 @@
 package net.tearpelato.falldrop_backport;
 
-public class FallDropBackportClient {
+import net.fabricmc.api.ClientModInitializer;
+
+public class FallDropBackportClient implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+
+    }
 }
