@@ -40,6 +40,13 @@ repositories {
         name = 'BlameJared'
         url = 'https://maven.blamejared.com'
     }
+    maven {
+        name = 'LiukRat Maven'
+        url ='https://maven.liukrast.net'
+    }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 // Declare capabilities on the outgoing configurations.
