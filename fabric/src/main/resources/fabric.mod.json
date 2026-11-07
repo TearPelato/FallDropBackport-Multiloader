@@ -15,7 +15,16 @@
   "icon": "${mod_id}.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "net.tearpelato.falldrop_backport.FallDropBackportDatagen"
+    ],
+    "client": [
+      "net.tearpelato.falldrop_backport.FallDropBackportClient"
+    ],
     "main": [
+      "net.tearpelato.falldrop_backport.FallDropBackport"
+    ],
+    "terrablender":[
       "net.tearpelato.falldrop_backport.FallDropBackport"
     ]
   },

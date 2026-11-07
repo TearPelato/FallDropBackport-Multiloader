@@ -1,18 +1,21 @@
 package net.tearpelato.falldrop_backport;
 
+import com.mojang.logging.LogUtils;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Constants {
+    private Constants() {}
 
     public static final String MOD_ID = "falldrop_backport";
-    public static final String MOD_NAME = "FallDropBackport";
-    public static final Logger LOG = LoggerFactory.getLogger(MOD_NAME);
+    public static final Logger LOG = LogUtils.getLogger();
+    public static final String NAMESPACE ="minecraft";
 
     public static Identifier id(String path) {
-        return Identifier.fromNamespaceAndPath(MOD_ID, path);
+        return Identifier.fromNamespaceAndPath(MOD_ID,path);
     }
 
-
+    public static Identifier vanilla(String path) {
+        return Identifier.withDefaultNamespace(path);
+    }
 }

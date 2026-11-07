@@ -4,8 +4,14 @@
   "package": "net.tearpelato.falldrop_backport.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_18",
-  "mixins": [],
+  "mixins": [
+    "ExplorationMapFunctionMixin",
+    "LivingEntityMixin",
+    "MapItemSavedDataMixin"
+  ],
   "client": [
+    "ItemModelResolverMixin",
+    "ItemModelsMixin"
   ],
   "server": [],
   "injectors": {

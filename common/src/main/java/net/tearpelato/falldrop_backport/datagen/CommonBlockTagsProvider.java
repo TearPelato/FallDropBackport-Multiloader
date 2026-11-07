@@ -1,0 +1,216 @@
+package net.tearpelato.falldrop_backport.datagen;
+
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.tearpelato.falldrop_backport.init.ModBlocks;
+import net.tearpelato.falldrop_backport.init.ModTags;
+
+import java.util.concurrent.CompletableFuture;
+
+public class CommonBlockTagsProvider extends IntrinsicHolderTagsProvider<Block> {
+    public CommonBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, Registries.BLOCK, lookupProvider, block-> block.builtInRegistryHolder().key());
+    }
+
+    @Override
+    protected void addTags(HolderLookup.Provider provider) {
+
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.POPLAR_STAIRS.get())
+                .add(ModBlocks.POPLAR_PLANKS.get())
+                .add(ModBlocks.POPLAR_SLAB.get())
+                .add(ModBlocks.POPLAR_FENCE.get())
+                .add(ModBlocks.POPLAR_SIGN.get())
+                .add(ModBlocks.POPLAR_WALL_SIGN.get())
+                .add(ModBlocks.POPLAR_HANGING_SIGN.get())
+                .add(ModBlocks.POPLAR_WALL_HANGING_SIGN.get())
+                .add(ModBlocks.POPLAR_DOOR.get())
+                .add(ModBlocks.POPLAR_TRAPDOOR.get())
+                .add(ModBlocks.POPLAR_BUTTON.get())
+                .add(ModBlocks.POPLAR_PRESSURE_PLATE.get());
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.WHITE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get())
+                .add(ModBlocks.GRAY_CONCRETE_STAIRS.get())
+                .add(ModBlocks.BLACK_CONCRETE_STAIRS.get())
+                .add(ModBlocks.BROWN_CONCRETE_STAIRS.get())
+                .add(ModBlocks.RED_CONCRETE_STAIRS.get())
+                .add(ModBlocks.ORANGE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.YELLOW_CONCRETE_STAIRS.get())
+                .add(ModBlocks.LIME_CONCRETE_STAIRS.get())
+                .add(ModBlocks.GREEN_CONCRETE_STAIRS.get())
+                .add(ModBlocks.CYAN_CONCRETE_STAIRS.get())
+                .add(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.BLUE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.PURPLE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.MAGENTA_CONCRETE_STAIRS.get())
+                .add(ModBlocks.PINK_CONCRETE_STAIRS.get())
+                .add(ModBlocks.WHITE_CONCRETE_SLAB.get())
+                .add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get())
+                .add(ModBlocks.GRAY_CONCRETE_SLAB.get())
+                .add(ModBlocks.BLACK_CONCRETE_SLAB.get())
+                .add(ModBlocks.BROWN_CONCRETE_SLAB.get())
+                .add(ModBlocks.RED_CONCRETE_SLAB.get())
+                .add(ModBlocks.ORANGE_CONCRETE_SLAB.get())
+                .add(ModBlocks.YELLOW_CONCRETE_SLAB.get())
+                .add(ModBlocks.LIME_CONCRETE_SLAB.get())
+                .add(ModBlocks.GREEN_CONCRETE_SLAB.get())
+                .add(ModBlocks.CYAN_CONCRETE_SLAB.get())
+                .add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get())
+                .add(ModBlocks.BLUE_CONCRETE_SLAB.get())
+                .add(ModBlocks.PURPLE_CONCRETE_SLAB.get())
+                .add(ModBlocks.MAGENTA_CONCRETE_SLAB.get())
+                .add(ModBlocks.PINK_CONCRETE_SLAB.get());
+
+
+        tag(BlockTags.LOGS)
+                .add(ModBlocks.POPLAR_LOG.get())
+                .add(ModBlocks.POPLAR_WOOD.get())
+                .add(ModBlocks.STRIPPED_POPLAR_WOOD.get())
+                .add(ModBlocks.STRIPPED_POPLAR_LOG.get());
+
+        tag(BlockTags.LEAVES)
+                .add(ModBlocks.RED_POPLAR_LEAVES.get())
+                .add(ModBlocks.ORANGE_POPLAR_LEAVES.get())
+                .add(ModBlocks.YELLOW_POPLAR_LEAVES.get());
+
+
+        tag(BlockTags.STAIRS)
+                .add(ModBlocks.POPLAR_STAIRS.get())
+                .add(ModBlocks.WHITE_WOOL_STAIRS.get())
+                .add(ModBlocks.LIGHT_GRAY_WOOL_STAIRS.get())
+                .add(ModBlocks.GRAY_WOOL_STAIRS.get())
+                .add(ModBlocks.BLACK_WOOL_STAIRS.get())
+                .add(ModBlocks.BROWN_WOOL_STAIRS.get())
+                .add(ModBlocks.RED_WOOL_STAIRS.get())
+                .add(ModBlocks.ORANGE_WOOL_STAIRS.get())
+                .add(ModBlocks.YELLOW_WOOL_STAIRS.get())
+                .add(ModBlocks.LIME_WOOL_STAIRS.get())
+                .add(ModBlocks.GREEN_WOOL_STAIRS.get())
+                .add(ModBlocks.CYAN_WOOL_STAIRS.get())
+                .add(ModBlocks.LIGHT_BLUE_WOOL_STAIRS.get())
+                .add(ModBlocks.BLUE_WOOL_STAIRS.get())
+                .add(ModBlocks.PURPLE_WOOL_STAIRS.get())
+                .add(ModBlocks.MAGENTA_WOOL_STAIRS.get())
+                .add(ModBlocks.PINK_WOOL_STAIRS.get())
+                .add(ModBlocks.WHITE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get())
+                .add(ModBlocks.GRAY_CONCRETE_STAIRS.get())
+                .add(ModBlocks.BLACK_CONCRETE_STAIRS.get())
+                .add(ModBlocks.BROWN_CONCRETE_STAIRS.get())
+                .add(ModBlocks.RED_CONCRETE_STAIRS.get())
+                .add(ModBlocks.ORANGE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.YELLOW_CONCRETE_STAIRS.get())
+                .add(ModBlocks.LIME_CONCRETE_STAIRS.get())
+                .add(ModBlocks.GREEN_CONCRETE_STAIRS.get())
+                .add(ModBlocks.CYAN_CONCRETE_STAIRS.get())
+                .add(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.BLUE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.PURPLE_CONCRETE_STAIRS.get())
+                .add(ModBlocks.MAGENTA_CONCRETE_STAIRS.get())
+                .add(ModBlocks.PINK_CONCRETE_STAIRS.get());
+
+        tag(BlockTags.SLABS)
+                .add(ModBlocks.POPLAR_SLAB.get())
+                .add(ModBlocks.WHITE_WOOL_SLAB.get())
+                .add(ModBlocks.LIGHT_GRAY_WOOL_SLAB.get())
+                .add(ModBlocks.GRAY_WOOL_SLAB.get())
+                .add(ModBlocks.BLACK_WOOL_SLAB.get())
+                .add(ModBlocks.BROWN_WOOL_SLAB.get())
+                .add(ModBlocks.RED_WOOL_SLAB.get())
+                .add(ModBlocks.ORANGE_WOOL_SLAB.get())
+                .add(ModBlocks.YELLOW_WOOL_SLAB.get())
+                .add(ModBlocks.LIME_WOOL_SLAB.get())
+                .add(ModBlocks.GREEN_WOOL_SLAB.get())
+                .add(ModBlocks.CYAN_WOOL_SLAB.get())
+                .add(ModBlocks.LIGHT_BLUE_WOOL_SLAB.get())
+                .add(ModBlocks.BLUE_WOOL_SLAB.get())
+                .add(ModBlocks.PURPLE_WOOL_SLAB.get())
+                .add(ModBlocks.MAGENTA_WOOL_SLAB.get())
+                .add(ModBlocks.PINK_WOOL_SLAB.get())
+                .add(ModBlocks.WHITE_CONCRETE_SLAB.get())
+                .add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get())
+                .add(ModBlocks.GRAY_CONCRETE_SLAB.get())
+                .add(ModBlocks.BLACK_CONCRETE_SLAB.get())
+                .add(ModBlocks.BROWN_CONCRETE_SLAB.get())
+                .add(ModBlocks.RED_CONCRETE_SLAB.get())
+                .add(ModBlocks.ORANGE_CONCRETE_SLAB.get())
+                .add(ModBlocks.YELLOW_CONCRETE_SLAB.get())
+                .add(ModBlocks.LIME_CONCRETE_SLAB.get())
+                .add(ModBlocks.GREEN_CONCRETE_SLAB.get())
+                .add(ModBlocks.CYAN_CONCRETE_SLAB.get())
+                .add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get())
+                .add(ModBlocks.BLUE_CONCRETE_SLAB.get())
+                .add(ModBlocks.PURPLE_CONCRETE_SLAB.get())
+                .add(ModBlocks.MAGENTA_CONCRETE_SLAB.get())
+                .add(ModBlocks.PINK_CONCRETE_SLAB.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.POPLAR_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.POPLAR_FENCE_GATE.get());
+        tag(BlockTags.DOORS).add(ModBlocks.POPLAR_DOOR.get());
+        tag(BlockTags.TRAPDOORS).add(ModBlocks.POPLAR_TRAPDOOR.get());
+        tag(BlockTags.WOODEN_SHELVES).add(ModBlocks.POPLAR_SHELF.get());
+
+
+        tag(BlockTags.FLOWER_POTS)
+                .add(ModBlocks.POPLAR_SAPLING_POTTED.get())
+                .add(ModBlocks.RED_SHRUB_POTTED.get());
+
+        tag(BlockTags.WOODEN_BUTTONS).add(ModBlocks.POPLAR_BUTTON.get());
+        tag(BlockTags.WOODEN_DOORS).add(ModBlocks.POPLAR_DOOR.get());
+        tag(BlockTags.WOODEN_FENCES).add(ModBlocks.POPLAR_FENCE.get());
+        tag(BlockTags.WOODEN_SLABS).add(ModBlocks.POPLAR_SLAB.get());
+        tag(BlockTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.POPLAR_PRESSURE_PLATE.get());
+        tag(BlockTags.WOODEN_STAIRS).add(ModBlocks.POPLAR_STAIRS.get());
+        tag(BlockTags.WOODEN_TRAPDOORS).add(ModBlocks.POPLAR_TRAPDOOR.get());
+
+        tag(BlockTags.WOOL)
+                .add(ModBlocks.WHITE_WOOL_STAIRS.get())
+                .add(ModBlocks.LIGHT_GRAY_WOOL_STAIRS.get())
+                .add(ModBlocks.GRAY_WOOL_STAIRS.get())
+                .add(ModBlocks.BLACK_WOOL_STAIRS.get())
+                .add(ModBlocks.BROWN_WOOL_STAIRS.get())
+                .add(ModBlocks.RED_WOOL_STAIRS.get())
+                .add(ModBlocks.ORANGE_WOOL_STAIRS.get())
+                .add(ModBlocks.YELLOW_WOOL_STAIRS.get())
+                .add(ModBlocks.LIME_WOOL_STAIRS.get())
+                .add(ModBlocks.GREEN_WOOL_STAIRS.get())
+                .add(ModBlocks.CYAN_WOOL_STAIRS.get())
+                .add(ModBlocks.LIGHT_BLUE_WOOL_STAIRS.get())
+                .add(ModBlocks.BLUE_WOOL_STAIRS.get())
+                .add(ModBlocks.PURPLE_WOOL_STAIRS.get())
+                .add(ModBlocks.MAGENTA_WOOL_STAIRS.get())
+                .add(ModBlocks.PINK_WOOL_STAIRS.get())
+                .add(ModBlocks.WHITE_WOOL_SLAB.get())
+                .add(ModBlocks.LIGHT_GRAY_WOOL_SLAB.get())
+                .add(ModBlocks.GRAY_WOOL_SLAB.get())
+                .add(ModBlocks.BLACK_WOOL_SLAB.get())
+                .add(ModBlocks.BROWN_WOOL_SLAB.get())
+                .add(ModBlocks.RED_WOOL_SLAB.get())
+                .add(ModBlocks.ORANGE_WOOL_SLAB.get())
+                .add(ModBlocks.YELLOW_WOOL_SLAB.get())
+                .add(ModBlocks.LIME_WOOL_SLAB.get())
+                .add(ModBlocks.GREEN_WOOL_SLAB.get())
+                .add(ModBlocks.CYAN_WOOL_SLAB.get())
+                .add(ModBlocks.LIGHT_BLUE_WOOL_SLAB.get())
+                .add(ModBlocks.BLUE_WOOL_SLAB.get())
+                .add(ModBlocks.PURPLE_WOOL_SLAB.get())
+                .add(ModBlocks.MAGENTA_WOOL_SLAB.get())
+                .add(ModBlocks.PINK_WOOL_SLAB.get());
+
+        tag(ModTags.Blocks.CUSHION_USES_COLLISION_SHAPE)
+                .add(Blocks.CAULDRON)
+                .add(Blocks.WATER_CAULDRON)
+                .add(Blocks.LAVA_CAULDRON)
+                .add(Blocks.POWDER_SNOW_CAULDRON)
+                .add(Blocks.HOPPER)
+                .add(Blocks.COMPOSTER);
+
+    }
+}

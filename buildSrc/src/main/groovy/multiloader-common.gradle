@@ -42,10 +42,25 @@ repositories {
     }
     maven {
         name = 'LiukRat Maven'
-        url ='https://maven.liukrast.net'
+        url ='https://maven.liukrast.net/'
     }
-    flatDir {
-        dirs 'libs'
+    mavenLocal()
+    maven { url = 'https://maven.minecraftforge.net/' }
+
+    repositories {
+        maven {
+            url "https://cursemaven.com"
+            content {
+                includeGroup "curse.maven"
+            }
+        }
+    }
+    maven {
+        url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
+    }
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
     }
 }
 

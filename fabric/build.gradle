@@ -2,16 +2,23 @@ plugins {
     id 'multiloader-loader'
     id 'net.fabricmc.fabric-loom'
 }
+
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
 
     implementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
-    compileOnly fileTree(dir: "${rootDir}", include: ['*.jar'])
+    //implementation("net.tearpelato:craftcorelib-fabric-26.1.2:${craftcorelib_version}")
+    //Dev Experimental version impl of CraftCoreLIB
+    implementation fileTree(dir: rootProject.file("libs"), include: "craftcorelib-fabric-*.jar")
+    implementation "com.github.glitchfiend:TerraBlender-fabric:${minecraft_version}-${terrablender_version}"
+
+    implementation "fuzs.forgeconfigapiport:forgeconfigapiport-fabric:26.1.5"
+    implementation "curse.maven:modmenu-308702:8966566"
 }
 
 loom {
-    def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
+    def aw = project(':fabric').file("src/main/resources/${mod_id}.accesswidener")
     if (aw.exists()) {
         accessWidenerPath.set(aw)
     }
@@ -30,6 +37,19 @@ loom {
             setConfigName('Fabric Server')
             ideConfigGenerated(true)
             runDir('runs/server')
+        }
+
+        datagen {
+            inherit client
+            name "Data Generation"
+            setConfigName('Fabric Datagen')
+            ideConfigGenerated(true)
+
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
+            vmArg "-Dfabric-api.datagen.modid=${mod_id}"
+
+            runDir 'runs/datagen'
         }
     }
 }
