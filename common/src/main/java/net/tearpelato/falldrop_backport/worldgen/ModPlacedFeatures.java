@@ -27,7 +27,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ORANGE_POPLAR = registerKey("orange_poplar");
     public static final ResourceKey<PlacedFeature> SHELF_MUSHROOM = registerKey("shelf_mushroom");
     public static final ResourceKey<PlacedFeature> FALLEN_POPLAR = registerKey("fallen_poplar");
-    public static final ResourceKey<PlacedFeature> BROWN_MUSHROOM_DAPPLED_FOREST = registerKey("brow_mushroom_dappled_forest");
+    public static final ResourceKey<PlacedFeature> BROWN_MUSHROOM_DAPPLED_FOREST = registerKey("brown_mushroom_dappled_forest");
     public static final ResourceKey<PlacedFeature> BAMBOO_IN_STRUCTURE = registerKey("bamboo_in_structure");
     public static final ResourceKey<PlacedFeature> TREES_DAPPLED_FOREST = registerKey("trees_dappled_forest");
 

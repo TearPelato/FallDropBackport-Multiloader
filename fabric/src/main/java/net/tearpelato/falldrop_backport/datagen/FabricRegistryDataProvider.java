@@ -75,6 +75,8 @@ public class FabricRegistryDataProvider extends FabricDynamicRegistryProvider {
         entries.add(ModPlacedFeatures.BAMBOO_IN_STRUCTURE,
                 placedFeatures.getOrThrow(ModPlacedFeatures.BAMBOO_IN_STRUCTURE).value());
 
+        entries.add(ModPlacedFeatures.TREES_DAPPLED_FOREST,
+                placedFeatures.getOrThrow(ModPlacedFeatures.TREES_DAPPLED_FOREST).value());
 
         HolderLookup.RegistryLookup<Biome> biomes =
                 registries.lookupOrThrow(Registries.BIOME);

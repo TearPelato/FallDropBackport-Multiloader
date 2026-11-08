@@ -36,11 +36,12 @@ import net.tearpelato.falldrop_backport.worldgen.placer.PoplarTrunkPlacer;
 import net.tearpelato.falldrop_backport.worldgen.placer.decorator.ShelfMushroomDecorator;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_SHRUB = registerKey("red_shrub");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_DAPPLED_FOREST = registerKey("poplar_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_DAPPLED_FOREST = registerKey("trees_dappled_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> POPLAR_TREES = registerKey("poplar_trees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> POPLAR_RED = registerKey("poplar_red");
     public static final ResourceKey<ConfiguredFeature<?, ?>> POPLAR_ORANGE = registerKey("poplar_orange");

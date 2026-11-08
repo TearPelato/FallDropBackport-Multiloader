@@ -21,3 +21,4 @@ hs_err_pid*
 run
 runs
 libs
+fabric/src/generated/resources/.cache

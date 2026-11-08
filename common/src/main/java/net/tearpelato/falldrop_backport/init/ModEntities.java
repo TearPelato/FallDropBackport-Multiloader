@@ -21,7 +21,7 @@ public class ModEntities {
             Constants.vanilla("poplar_boat"));
     public static final ResourceKey<EntityType<?>> POPLAR_CHEST_BOAT_KEY = ResourceKey.create(Registries.ENTITY_TYPE,
             Constants.vanilla("poplar_chest_boat"));
-    public static final ResourceKey<EntityType<?>> CUSHION_KEY =ResourceKey.create(Registries.ENTITY_TYPE, Constants.id("cushion"));
+    public static final ResourceKey<EntityType<?>> CUSHION_KEY =ResourceKey.create(Registries.ENTITY_TYPE, Constants.vanilla("cushion"));
 
     public static final Supplier<EntityType<Boat>> POPLAR_BOAT = ObjectRegistries.registerEntity(Constants.vanilla("poplar_boat"),
             () -> EntityType.Builder.<Boat>of((entityType, level) -> new Boat(entityType, level, ModItems.POPLAR_BOAT),
