@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:magma_block",
+    "#minecraft:base_stone_overworld",
+    "minecraft:packed_ice",
+    "minecraft:ice",
+    "minecraft:blue_ice",
+    "minecraft:snow_block",
+    "minecraft:calcite"
+  ]
+}

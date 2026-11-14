@@ -209,11 +209,11 @@ public class ExplorerMapItemModel implements ItemModel {
     }
 
     public static void init() {
-        registerDecorationModel(ModMapDecorationTypes.ANCIENT_CITY.get(), Constants.vanilla("buried_ancient_city_map"));
-        registerDecorationModel(ModMapDecorationTypes.ABANDONED_CAMP.get(), Constants.vanilla("abandoned_camp_map"));
-        registerDecorationModel(ModMapDecorationTypes.DESERT_PYRAMID.get(), Constants.vanilla("desert_pyramid_map"));
-        registerDecorationModel(ModMapDecorationTypes.MINESHAFT.get(), Constants.vanilla("buried_mineshaft_map"));
-        registerDecorationModel(ModMapDecorationTypes.OCEAN_RUIN_WARM.get(), Constants.vanilla("warm_ocean_ruins_map"));
+        registerDecorationModel(ModMapDecorationTypes.ANCIENT_CITY.holder(), Constants.vanilla("buried_ancient_city_map"));
+        registerDecorationModel(ModMapDecorationTypes.ABANDONED_CAMP.holder(), Constants.vanilla("abandoned_camp_map"));
+        registerDecorationModel(ModMapDecorationTypes.DESERT_PYRAMID.holder(), Constants.vanilla("desert_pyramid_map"));
+        registerDecorationModel(ModMapDecorationTypes.MINESHAFT.holder(), Constants.vanilla("buried_mineshaft_map"));
+        registerDecorationModel(ModMapDecorationTypes.OCEAN_RUIN_WARM.holder(), Constants.vanilla("warm_ocean_ruins_map"));
         registerDecorationModel(MapDecorationTypes.RED_X, Constants.vanilla("buried_treasure_map"));
         registerDecorationModel(MapDecorationTypes.DESERT_VILLAGE, Constants.vanilla("desert_village_map"));
         registerDecorationModel(MapDecorationTypes.JUNGLE_TEMPLE, Constants.vanilla("jungle_temple_map"));

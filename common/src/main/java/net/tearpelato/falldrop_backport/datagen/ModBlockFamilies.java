@@ -15,4 +15,31 @@ public class ModBlockFamilies {
             .door(ModBlocks.POPLAR_DOOR.get())
             .trapdoor(ModBlocks.POPLAR_TRAPDOOR.get())
             .getFamily();
+
+    public static final BlockFamily POLISHED_CALCITE = new BlockFamily.Builder(ModBlocks.POLISHED_CALCITE.get())
+            .stairs(ModBlocks.POLISHED_CALCITE_STAIRS.get())
+            .slab(ModBlocks.POLISHED_CALCITE_SLAB.get())
+            .wall(ModBlocks.POLISHED_CALCITE_WALL.get())
+            .getFamily();
+
+    public static final BlockFamily POLISHED_CALCITE_BRICKS = new BlockFamily.Builder(ModBlocks.POLISHED_CALCITE_BRICKS.get())
+            .stairs(ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get())
+            .slab(ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get())
+            .wall(ModBlocks.POLISHED_CALCITE_BRICK_WALL.get())
+            .getFamily();
+
+    public static final BlockFamily SNOW_BRICKS = new BlockFamily.Builder(ModBlocks.SNOW_BRICKS.get())
+            .stairs(ModBlocks.SNOW_BRICK_STAIRS.get())
+            .slab(ModBlocks.SNOW_BRICK_SLAB.get())
+            .wall(ModBlocks.SNOW_BRICK_WALL.get())
+            .getFamily();
+
+    public static final BlockFamily PACKED_ICE_BRICKS = new BlockFamily.Builder(ModBlocks.PACKED_ICE_BRICKS.get())
+            .stairs(ModBlocks.PACKED_ICE_BRICK_STAIRS.get())
+            .slab(ModBlocks.PACKED_ICE_BRICK_SLAB.get())
+            .wall(ModBlocks.PACKED_ICE_BRICK_WALL.get())
+            .getFamily();
+
+
+
 }

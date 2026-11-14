@@ -34,7 +34,7 @@ public class FallDropBackportDatagen {
         generator.addProvider(true, new CommonBiomeTagsProvider(packOutput, lookupProvider));
         generator.addProvider(true, new NeoForgeSoundProvider(packOutput));
         generator.addProvider(true, new CommonVillagerTradesTagsProvider(packOutput, lookupProvider));
-
+        generator.addProvider(true, new CommonAdvancementProvider(packOutput,lookupProvider));
 
 
     }

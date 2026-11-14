@@ -270,6 +270,62 @@ public class CommonRecipeProvider extends RecipeProvider {
                 ModItems.BLUE_CUSHION.get(), ModItems.PURPLE_CUSHION.get(), ModItems.MAGENTA_CUSHION.get(), ModItems.PINK_CUSHION.get()
         ), "cushion_dye", RecipeCategory.DECORATIONS);
 
+        polished(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE.get(), Blocks.CALCITE);
+        polished(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICKS.get(), ModBlocks.POLISHED_CALCITE.get());
+        polished(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS.get(), Blocks.SNOW_BLOCK);
+        polished(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_ICE_BRICKS.get(), Blocks.PACKED_ICE);
+
+
+
+        stairBuilder(ModBlocks.CALCITE_STAIRS.get(),Ingredient.of(Blocks.CALCITE));
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_STAIRS.get(), Blocks.CALCITE);
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_WALL.get(), Blocks.CALCITE);
+
+        stairBuilder(ModBlocks.POLISHED_CALCITE_STAIRS.get(),Ingredient.of(ModBlocks.POLISHED_CALCITE.get()));
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_STAIRS.get(), ModBlocks.POLISHED_CALCITE.get());
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_WALL.get(), ModBlocks.POLISHED_CALCITE.get());
+
+        stairBuilder(ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get(),Ingredient.of(ModBlocks.POLISHED_CALCITE_BRICKS.get()));
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get(), ModBlocks.POLISHED_CALCITE_BRICKS.get());
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_WALL.get(), ModBlocks.POLISHED_CALCITE_BRICKS.get());
+
+        stairBuilder(ModBlocks.PACKED_ICE_BRICK_STAIRS.get(),Ingredient.of(ModBlocks.PACKED_ICE_BRICKS.get()));
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_ICE_BRICK_STAIRS.get(), ModBlocks.PACKED_ICE_BRICKS.get());
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_ICE_BRICK_WALL.get(), ModBlocks.PACKED_ICE_BRICKS.get());
+
+        stairBuilder(ModBlocks.SNOW_BRICK_STAIRS.get(),Ingredient.of(ModBlocks.SNOW_BRICKS.get()));
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_STAIRS.get(), ModBlocks.SNOW_BRICKS.get());
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_WALL.get(), ModBlocks.SNOW_BRICKS.get());
+
+        chiseled(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PACKED_ICE.get(), ModBlocks.PACKED_ICE_BRICK_SLAB.get());
+
+        this.shaped(RecipeCategory.BUILDING_BLOCKS,ModBlocks.CALCITE_PILLAR.get())
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('#', Blocks.CALCITE)
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(output);
+
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE.get(), Blocks.CALCITE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_STAIRS.get(), Blocks.CALCITE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_SLAB.get(), Blocks.CALCITE, 2);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_WALL.get(), Blocks.CALCITE);
+
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICKS.get(), ModBlocks.POLISHED_CALCITE.get());
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_STAIRS.get(), ModBlocks.POLISHED_CALCITE.get());
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_SLAB.get(), ModBlocks.POLISHED_CALCITE.get(), 2);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_WALL.get(), ModBlocks.POLISHED_CALCITE.get());
+
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get(), ModBlocks.POLISHED_CALCITE_BRICKS.get());
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get(), ModBlocks.POLISHED_CALCITE_BRICKS.get(), 2);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_WALL.get(), ModBlocks.POLISHED_CALCITE_BRICKS.get());
+
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_ICE_BRICKS.get(), Blocks.PACKED_ICE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_ICE_BRICK_STAIRS.get(), ModBlocks.PACKED_ICE_BRICKS.get());
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_ICE_BRICK_SLAB.get(), ModBlocks.PACKED_ICE_BRICKS.get(), 2);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_ICE_BRICK_WALL.get(), ModBlocks.PACKED_ICE_BRICKS.get());
+
+
     }
 
 

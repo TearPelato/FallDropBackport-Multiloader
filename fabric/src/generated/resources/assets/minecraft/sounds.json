@@ -1,4 +1,180 @@
 {
+  "block.brittle_ice.break": {
+    "sounds": [
+      "minecraft:block/brittle_ice/break1",
+      "minecraft:block/brittle_ice/break2",
+      "minecraft:block/brittle_ice/break3",
+      "minecraft:block/brittle_ice/break4"
+    ],
+    "subtitle": "sounds.block.generic.break"
+  },
+  "block.brittle_ice.crack": {
+    "sounds": [
+      "minecraft:block/brittle_ice/crack1",
+      "minecraft:block/brittle_ice/crack2",
+      "minecraft:block/brittle_ice/crack3"
+    ],
+    "subtitle": "sounds.minecraft.brittle_ice.crack"
+  },
+  "block.brittle_ice.hit": {
+    "sounds": [
+      "minecraft:block/brittle_ice/hit1",
+      "minecraft:block/brittle_ice/hit2",
+      "minecraft:block/brittle_ice/hit3",
+      "minecraft:block/brittle_ice/hit4"
+    ],
+    "subtitle": "sounds.block.generic.hit"
+  },
+  "block.brittle_ice.place": {
+    "sounds": [
+      "minecraft:block/brittle_ice/place1",
+      "minecraft:block/brittle_ice/place2",
+      "minecraft:block/brittle_ice/place3",
+      "minecraft:block/brittle_ice/place4"
+    ],
+    "subtitle": "sounds.block.generic.place"
+  },
+  "block.brittle_ice.step": {
+    "sounds": [
+      "minecraft:block/brittle_ice/step1",
+      "minecraft:block/brittle_ice/step2",
+      "minecraft:block/brittle_ice/step3",
+      "minecraft:block/brittle_ice/step4"
+    ],
+    "subtitle": "sounds.block.generic.footsteps"
+  },
+  "block.ice.ambient": {
+    "sounds": [
+      "minecraft:block/ice/ambient1",
+      "minecraft:block/ice/ambient2",
+      "minecraft:block/ice/ambient3"
+    ],
+    "subtitle": "sounds.minecraft.ice.ambient"
+  },
+  "block.ice_crystal.ambient": {
+    "sounds": [
+      "minecraft:block/ice_crystal/ambient1",
+      "minecraft:block/ice_crystal/ambient2",
+      "minecraft:block/ice_crystal/ambient3"
+    ],
+    "subtitle": "sounds.minecraft.ice_crystal.ambient"
+  },
+  "block.ice_crystal.break": {
+    "sounds": [
+      "minecraft:block/ice_crystal/break1",
+      "minecraft:block/ice_crystal/break2",
+      "minecraft:block/ice_crystal/break3",
+      "minecraft:block/ice_crystal/break4"
+    ],
+    "subtitle": "sounds.block.generic.break"
+  },
+  "block.ice_crystal.hit": {
+    "sounds": [
+      "minecraft:block/ice_crystal/hit1",
+      "minecraft:block/ice_crystal/hit2",
+      "minecraft:block/ice_crystal/hit3",
+      "minecraft:block/ice_crystal/hit4"
+    ],
+    "subtitle": "sounds.block.generic.hit"
+  },
+  "block.ice_crystal.place": {
+    "sounds": [
+      "minecraft:block/ice_crystal/place1",
+      "minecraft:block/ice_crystal/place2",
+      "minecraft:block/ice_crystal/place3",
+      "minecraft:block/ice_crystal/place4"
+    ],
+    "subtitle": "sounds.block.generic.place"
+  },
+  "block.ice_crystal.step": {
+    "sounds": [
+      "minecraft:block/ice_crystal/step1",
+      "minecraft:block/ice_crystal/step2",
+      "minecraft:block/ice_crystal/step3",
+      "minecraft:block/ice_crystal/step4"
+    ],
+    "subtitle": "sounds.block.generic.footsteps"
+  },
+  "block.icicle.break": {
+    "sounds": [
+      "minecraft:block/icicle/break1",
+      "minecraft:block/icicle/break2",
+      "minecraft:block/icicle/break3",
+      "minecraft:block/icicle/break4"
+    ],
+    "subtitle": "sounds.block.generic.break"
+  },
+  "block.icicle.hit": {
+    "sounds": [
+      "minecraft:block/icicle/hit1",
+      "minecraft:block/icicle/hit2",
+      "minecraft:block/icicle/hit3",
+      "minecraft:block/icicle/hit4"
+    ],
+    "subtitle": "sounds.block.generic.hit"
+  },
+  "block.icicle.land": {
+    "sounds": [
+      "minecraft:block/icicle/land1",
+      "minecraft:block/icicle/land2",
+      "minecraft:block/icicle/land3"
+    ],
+    "subtitle": "sounds.minecraft.icicle.land"
+  },
+  "block.icicle.place": {
+    "sounds": [
+      "minecraft:block/icicle/place1",
+      "minecraft:block/icicle/place2",
+      "minecraft:block/icicle/place3",
+      "minecraft:block/icicle/place4"
+    ],
+    "subtitle": "sounds.block.generic.place"
+  },
+  "block.icicle.step": {
+    "sounds": [
+      "minecraft:block/icicle/step1",
+      "minecraft:block/icicle/step2",
+      "minecraft:block/icicle/step3",
+      "minecraft:block/icicle/step4"
+    ],
+    "subtitle": "sounds.block.generic.footsteps"
+  },
+  "block.packed_ice.break": {
+    "sounds": [
+      "minecraft:block/packed_ice/break1",
+      "minecraft:block/packed_ice/break2",
+      "minecraft:block/packed_ice/break3",
+      "minecraft:block/packed_ice/break4"
+    ],
+    "subtitle": "sounds.block.generic.break"
+  },
+  "block.packed_ice.hit": {
+    "sounds": [
+      "minecraft:block/packed_ice/hit1",
+      "minecraft:block/packed_ice/hit2",
+      "minecraft:block/packed_ice/hit3",
+      "minecraft:block/packed_ice/hit4"
+    ],
+    "subtitle": "sounds.block.generic.hit"
+  },
+  "block.packed_ice.place": {
+    "sounds": [
+      "minecraft:block/packed_ice/place1",
+      "minecraft:block/packed_ice/place2",
+      "minecraft:block/packed_ice/place3",
+      "minecraft:block/packed_ice/place4"
+    ],
+    "subtitle": "sounds.block.generic.place"
+  },
+  "block.packed_ice.step": {
+    "sounds": [
+      "minecraft:block/packed_ice/step1",
+      "minecraft:block/packed_ice/step2",
+      "minecraft:block/packed_ice/step3",
+      "minecraft:block/packed_ice/step4"
+    ],
+    "subtitle": "sounds.block.generic.footsteps"
+  },
   "block.poplar_leaves.break": {
     "sounds": [
       "minecraft:block/leaf_litter/break1",
@@ -199,5 +375,78 @@
       "minecraft:entity/cushion/sit3"
     ],
     "subtitle": "sounds.minecraft.cushion.break"
+  },
+  "entity.frostbite.ambient": {
+    "sounds": [
+      "minecraft:entity/frostbite/ambient1",
+      "minecraft:entity/frostbite/ambient2",
+      "minecraft:entity/frostbite/ambient3"
+    ],
+    "subtitle": "sounds.minecraft.frostbite.ambient"
+  },
+  "entity.frostbite.converted_to_zombie": {
+    "sounds": [
+      "minecraft:entity/frostbite/converted_to_zombie"
+    ],
+    "subtitle": "sounds.minecraft.frostbite.converted_to_zombie"
+  },
+  "entity.frostbite.death": {
+    "sounds": [
+      "minecraft:entity/frostbite/death"
+    ],
+    "subtitle": "sounds.minecraft.frostbite.death"
+  },
+  "entity.frostbite.hurt": {
+    "sounds": [
+      "minecraft:entity/frostbite/hurt1",
+      "minecraft:entity/frostbite/hurt2",
+      "minecraft:entity/frostbite/hurt3"
+    ],
+    "subtitle": "sounds.minecraft.frostbite.hurt"
+  },
+  "entity.frostbite.step": {
+    "sounds": [
+      "minecraft:entity/frostbite/step1",
+      "minecraft:entity/frostbite/step2",
+      "minecraft:entity/frostbite/step3",
+      "minecraft:entity/frostbite/step4"
+    ],
+    "subtitle": "sounds.minecraft.frostbite.step"
+  },
+  "entity.ice_ball.break": {
+    "sounds": [
+      "minecraft:entity/ice_ball/break1",
+      "minecraft:entity/ice_ball/break2",
+      "minecraft:entity/ice_ball/break3"
+    ],
+    "subtitle": "sounds.minecraft.ice_ball.break"
+  },
+  "entity.ice_ball.throw": {
+    "sounds": [
+      "minecraft:entity/ice_ball/throw1",
+      "minecraft:entity/ice_ball/throw2",
+      "minecraft:entity/ice_ball/throw3"
+    ],
+    "subtitle": "sounds.minecraft.ice_ball.throw"
+  },
+  "entity.zombie.converted_to_frostbite": {
+    "sounds": [
+      "minecraft:entity/zombie/converted_to_frostbite"
+    ],
+    "subtitle": "sounds.minecraft.zombie.converted_to_frostbite"
+  },
+  "event.mob_effect.freezing": {
+    "sounds": [
+      "minecraft:event/mob_effect/freezing"
+    ],
+    "subtitle": "sounds.minecraft.mob_effect.freezing"
+  },
+  "music_disc.flurry": {
+    "sounds": [
+      {
+        "name": "minecraft:records/flurry",
+        "stream": true
+      }
+    ]
   }
 }

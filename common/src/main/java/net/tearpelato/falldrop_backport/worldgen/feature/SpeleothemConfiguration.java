@@ -1,0 +1,31 @@
+package net.tearpelato.falldrop_backport.worldgen.feature;
+
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.core.HolderSet;
+import net.minecraft.core.RegistryCodecs;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+
+public record SpeleothemConfiguration(
+        BlockState baseBlock,
+        BlockState pointedBlock,
+        HolderSet<Block> replaceableBlocks,
+        float chanceOfTallerGeneration,
+        float chanceOfDirectionalSpread,
+        float chanceOfSpreadRadius2,
+        float chanceOfSpreadRadius3
+) implements FeatureConfiguration {
+
+    public static final Codec<SpeleothemConfiguration> CODEC = RecordCodecBuilder.create(i -> i.group(
+            BlockState.CODEC.fieldOf("base_block").forGetter(SpeleothemConfiguration::baseBlock),
+            BlockState.CODEC.fieldOf("pointed_block").forGetter(SpeleothemConfiguration::pointedBlock),
+            RegistryCodecs.homogeneousList(Registries.BLOCK).fieldOf("replaceable_blocks").forGetter(SpeleothemConfiguration::replaceableBlocks),
+            Codec.floatRange(0.0F, 1.0F).optionalFieldOf("chance_of_taller_generation", 0.2F).forGetter(SpeleothemConfiguration::chanceOfTallerGeneration),
+            Codec.floatRange(0.0F, 1.0F).optionalFieldOf("chance_of_directional_spread", 0.7F).forGetter(SpeleothemConfiguration::chanceOfDirectionalSpread),
+            Codec.floatRange(0.0F, 1.0F).optionalFieldOf("chance_of_spread_radius2", 0.5F).forGetter(SpeleothemConfiguration::chanceOfSpreadRadius2),
+            Codec.floatRange(0.0F, 1.0F).optionalFieldOf("chance_of_spread_radius3", 0.5F).forGetter(SpeleothemConfiguration::chanceOfSpreadRadius3)
+    ).apply(i, SpeleothemConfiguration::new));
+}

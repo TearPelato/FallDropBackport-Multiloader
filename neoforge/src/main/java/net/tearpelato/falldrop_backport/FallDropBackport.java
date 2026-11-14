@@ -18,6 +18,7 @@ public class FallDropBackport {
         ModItems.init();
         ModBlocks.init();
         ModBlockEntities.init();
+        ModMobEffects.init();
         ModEntities.init();
         ModParticleTypes.init();
         ModTrunkPlacerTypes.init();
@@ -27,6 +28,8 @@ public class FallDropBackport {
         ModSounds.init();
         ModMapDecorationTypes.init();
         ModEntityDataSerializer.init();
+        ModFeatures.init();
+        ModMaterialConditions.init();
 
 
 

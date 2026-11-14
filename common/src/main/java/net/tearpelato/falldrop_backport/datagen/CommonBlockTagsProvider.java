@@ -212,5 +212,35 @@ public class CommonBlockTagsProvider extends IntrinsicHolderTagsProvider<Block> 
                 .add(Blocks.HOPPER)
                 .add(Blocks.COMPOSTER);
 
+        tag(ModTags.Blocks.SPELEOTHEMS)
+                .add(Blocks.POINTED_DRIPSTONE)
+                .add(ModBlocks.ICICLE.get());
+        tag(ModTags.Blocks.MELTS_ICICLE_ABOVE).add(Blocks.MAGMA_BLOCK);
+
+        tag(ModTags.Blocks.ICE_CREVASSE_REPLACEABLES)
+                .add(Blocks.MAGMA_BLOCK);
+
+        tag(ModTags.Blocks.ICE_CAVE_ORE_REPLACEABLES)
+                .addTag(BlockTags.STONE_ORE_REPLACEABLES)
+                .addTag(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+
+        tag(ModTags.Blocks.ICE_CREVASSE_REPLACEABLES)
+                .addTag(BlockTags.BASE_STONE_OVERWORLD)
+                .add(Blocks.PACKED_ICE)
+                .add(Blocks.ICE)
+                .add(Blocks.BLUE_ICE)
+                .add(Blocks.SNOW_BLOCK)
+                .add(Blocks.CALCITE);
+
+        tag(ModTags.Blocks.LARGE_ICICLE_REPLACEABLE)
+                .addTag(BlockTags.BASE_STONE_OVERWORLD)
+                .add(Blocks.PACKED_ICE)
+                .add(Blocks.ICE)
+                .add(Blocks.BLUE_ICE)
+                .add(Blocks.SNOW_BLOCK)
+                .add(Blocks.CALCITE)
+                .add(Blocks.STONE)
+                .add(Blocks.DEEPSLATE);
+
     }
 }

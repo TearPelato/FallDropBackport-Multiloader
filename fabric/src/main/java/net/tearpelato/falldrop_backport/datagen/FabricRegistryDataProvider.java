@@ -23,7 +23,7 @@ public class FabricRegistryDataProvider extends FabricDynamicRegistryProvider {
 
     @Override
     protected void configure(HolderLookup.Provider registries, Entries entries) {
-
+        entries.addAll(registries.lookupOrThrow(Registries.JUKEBOX_SONG));
 
         HolderLookup.RegistryLookup<ConfiguredFeature<?,?>> configuredFeatures =
                 registries.lookupOrThrow(Registries.CONFIGURED_FEATURE);
@@ -82,6 +82,8 @@ public class FabricRegistryDataProvider extends FabricDynamicRegistryProvider {
                 registries.lookupOrThrow(Registries.BIOME);
         entries.add(ModBiomes.DAPPLED_FOREST,
                 biomes.getOrThrow(ModBiomes.DAPPLED_FOREST).value());
+        entries.add(ModBiomes.ICE_CAVES,
+                biomes.getOrThrow(ModBiomes.ICE_CAVES).value());
 
         HolderLookup.RegistryLookup<VillagerTrade> trades =
                 registries.lookupOrThrow(Registries.VILLAGER_TRADE);
@@ -92,7 +94,7 @@ public class FabricRegistryDataProvider extends FabricDynamicRegistryProvider {
                 trades.getOrThrow(CommonWanderingTraderTrades.WANDERING_TRADER_UNCOMMON_POPLAR_SAPLING).value());
         entries.add(CommonWanderingTraderTrades.WANDERING_TRADER_UNCOMMON_SHELF_MUSHROOM,
                 trades.getOrThrow(CommonWanderingTraderTrades.WANDERING_TRADER_UNCOMMON_SHELF_MUSHROOM).value());
-
+        entries.addAll(registries.lookupOrThrow(Registries.NOISE));
 
 
 

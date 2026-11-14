@@ -161,5 +161,35 @@ public class FabricLootProvider extends FabricBlockLootSubProvider {
                                                         .hasProperty(BlockStateProperties.AGE_1, 1)))))
         );
 
+        dropSelf(ModBlocks.ICICLE.get());
+        dropSelf(ModBlocks.ICE_CRYSTAL.get());
+        dropSelf(ModBlocks.BRITTLE_ICE.get());
+        dropSelf(ModBlocks.PACKED_ICE_BRICKS.get());
+        add(ModBlocks.PACKED_ICE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.PACKED_ICE_BRICK_SLAB.get()));
+        dropSelf(ModBlocks.PACKED_ICE_BRICK_STAIRS.get());
+        dropSelf(ModBlocks.PACKED_ICE_BRICK_WALL.get());
+        dropSelf(ModBlocks.CHISELED_PACKED_ICE.get());
+
+        dropSelf(ModBlocks.SNOW_BRICKS.get());
+        add(ModBlocks.SNOW_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.SNOW_BRICK_SLAB.get()));
+        dropSelf(ModBlocks.SNOW_BRICK_STAIRS.get());
+        dropSelf(ModBlocks.SNOW_BRICK_WALL.get());
+
+        add(ModBlocks.CALCITE_SLAB.get(), createSlabItemTable(ModBlocks.CALCITE_SLAB.get()));
+        dropSelf(ModBlocks.CALCITE_STAIRS.get());
+        dropSelf(ModBlocks.CALCITE_WALL.get());
+
+        dropSelf(ModBlocks.POLISHED_CALCITE.get());
+        add(ModBlocks.POLISHED_CALCITE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_CALCITE_SLAB.get()));
+        dropSelf(ModBlocks.POLISHED_CALCITE_STAIRS.get());
+        dropSelf(ModBlocks.POLISHED_CALCITE_WALL.get());
+
+        dropSelf(ModBlocks.POLISHED_CALCITE_BRICKS.get());
+        add(ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get()));
+        dropSelf(ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get());
+        dropSelf(ModBlocks.POLISHED_CALCITE_BRICK_WALL.get());
+
+        dropSelf(ModBlocks.CALCITE_PILLAR.get());
+
     }
 }

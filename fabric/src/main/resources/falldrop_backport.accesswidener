@@ -29,3 +29,12 @@ accessible method net/minecraft/data/recipes/RecipeProvider fenceGateBuilder (Ln
 accessible method net/minecraft/data/recipes/RecipeProvider buttonBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
 accessible method net/minecraft/data/recipes/RecipeProvider signBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
 accessible method net/minecraft/data/recipes/RecipeProvider pressurePlate (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/level/ItemLike;)V
+accessible method net/minecraft/client/data/models/BlockModelGenerators createTrivialCube (Lnet/minecraft/world/level/block/Block;)V
+accessible method net/minecraft/client/data/models/BlockModelGenerators createRotatedPillar (Lnet/minecraft/world/level/block/Block;)V
+accessible method net/minecraft/client/data/models/BlockModelGenerators createSuffixedVariant (Lnet/minecraft/world/level/block/Block;Ljava/lang/String;Lnet/minecraft/client/data/models/model/ModelTemplate;Ljava/util/function/Function;)Lnet/minecraft/resources/Identifier;
+accessible method net/minecraft/client/data/models/BlockModelGenerators createAxisAlignedPillarBlock (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/data/models/model/TexturedModel$Provider;)V
+accessible field net/minecraft/client/data/models/BlockModelGenerators modelOutput Ljava/util/function/BiConsumer;
+accessible field net/minecraft/client/data/models/BlockModelGenerators ROTATIONS_COLUMN_WITH_FACING Lnet/minecraft/client/data/models/blockstates/PropertyDispatch;
+accessible class net/minecraft/world/level/levelgen/SurfaceRules
+accessible class net/minecraft/world/level/levelgen/SurfaceRules$Context
+accessible class net/minecraft/world/level/levelgen/SurfaceRules$Condition

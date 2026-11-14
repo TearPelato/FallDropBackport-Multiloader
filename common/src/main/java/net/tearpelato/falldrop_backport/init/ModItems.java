@@ -6,6 +6,7 @@ import net.minecraft.world.item.component.MapDecorations;
 import net.tearpelato.craftcorelib.api.registry.ObjectRegistries;
 import net.tearpelato.falldrop_backport.Constants;
 import net.tearpelato.falldrop_backport.item.CushionItem;
+import net.tearpelato.falldrop_backport.item.IceBallItem;
 
 public class ModItems {
 
@@ -90,7 +91,14 @@ public class ModItems {
     public static final ObjectRegistries<MapItem> WARM_OCEAN_RUINS_MAP = ObjectRegistries.registerItem(Constants.vanilla("warm_ocena_ruins_map"),
             properties -> new MapItem(properties.component(DataComponents.MAP_DECORATIONS, MapDecorations.EMPTY)), Item.Properties::new);
 
+    public static final ObjectRegistries<IceBallItem> ICE_BALL = ObjectRegistries.registerItem(Constants.vanilla("ice_ball"),
+            properties-> new IceBallItem(properties.stacksTo(16)), Item.Properties::new);
 
+    public static final ObjectRegistries<Item> FLURRY_MUSIC_DISC = ObjectRegistries.registerItem(Constants.vanilla("music_disc_flurry"),
+            properties-> new Item(properties.stacksTo(1).rarity(Rarity.UNCOMMON).jukeboxPlayable(ModJukeboxSongs.FLURRY)), Item.Properties::new);
+
+    public static final ObjectRegistries<SpawnEggItem> FROSTBITE_SPAWN_EGG = ObjectRegistries.registerItem(Constants.vanilla("frostbite_spawn_egg"),
+            properties -> new SpawnEggItem(properties.spawnEgg(ModEntities.FROSTBITE.get())), Item.Properties::new);
 
 
     public static Item getCushion(DyeColor color) {

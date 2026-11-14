@@ -96,6 +96,32 @@
   "block.minecraft.shelf_mushroom": "Shelf Mushroom",
   "block.minecraft.straw_bed": "Straw Bed",
 
+  "block.minecraft.calcite_pillar": "Calcite Pillar",
+  "block.minecraft.calcite_slab": "Calcite Slab",
+  "block.minecraft.calcite_stairs": "Calcite Stairs",
+  "block.minecraft.calcite_wall": "Calcite Wall",
+  "block.minecraft.polished_calcite": "Polished Calcite",
+  "block.minecraft.polished_calcite_brick_slab": "Polished Calcite Brick Slab",
+  "block.minecraft.polished_calcite_brick_stairs": "Polished Calcite Brick Stairs",
+  "block.minecraft.polished_calcite_brick_wall": "Polished Calcite Brick Wall",
+  "block.minecraft.polished_calcite_bricks": "Polished Calcite Bricks",
+  "block.minecraft.polished_calcite_slab": "Polished Calcite Slab",
+  "block.minecraft.polished_calcite_stairs": "Polished Calcite Stairs",
+  "block.minecraft.polished_calcite_wall": "Polished Calcite Wall",
+  "block.minecraft.snow_brick_slab": "Snow Brick Slab",
+  "block.minecraft.snow_brick_stairs": "Snow Brick Stairs",
+  "block.minecraft.snow_brick_wall": "Snow Brick Wall",
+  "block.minecraft.snow_bricks": "Snow Bricks",
+  "block.minecraft.packed_ice_brick_slab": "Packed Ice Brick Slab",
+  "block.minecraft.packed_ice_brick_stairs": "Packed Ice Brick Stairs",
+  "block.minecraft.packed_ice_brick_wall": "Packed Ice Brick Wall",
+  "block.minecraft.packed_ice_bricks": "Packed Ice Bricks",
+  "block.minecraft.icicle": "Icicle",
+  "block.minecraft.chiseled_packed_ice": "Chiseled Packed Ice",
+  "block.minecraft.ice_crystal": "Ice Crystal",
+  "block.minecraft.brittle_ice": "Brittle Ice",
+
+
   "item.minecraft.poplar_sign": "Poplar Sign",
   "item.minecraft.poplar_hanging_sign": "Poplar Hanging Sign",
   "item.minecraft.poplar_boat": "Poplar Boat",
@@ -134,6 +160,9 @@
   "item.minecraft.buried_trial_chambers_map": "Buried Trial Chambers Map",
   "item.minecraft.warm_ocean_ruins_map": "Warm Ocean Ruins Map",
   "item.minecraft.woodland_mansion_map": "Woodland Mansion Map",
+  "item.minecraft.frostbite_spawn_egg": "Frostbite Spawn Egg",
+  "item.minecraft.ice_ball": "Ice Ball",
+  "item.minecraft.music_disc_flurry" : "Flurry Music Disc",
 
   "filled_map.bamboo_jungle_camp": "Bamboo Jungle Camp Map",
   "filled_map.birch_forest_camp": "Birch Forest Camp Map",
@@ -152,6 +181,8 @@
   "entity.falldrop_backport.poplar_chest_boat": "Poplar Boat with Chest",
   "entity.falldrop_backport.poplar_boat": "Poplar Boat",
   "entity.falldrop_backport.cushion": "Cushion",
+  "entity.minecraft.frostbite": "Frostbite",
+  "entity.minecraft.ice_ball": "Ice Ball",
   "mount.sit": "Press %1$s to get up",
 
   "biome.minecraft.dappled_forest": "Dappled Forest",
@@ -164,5 +195,8 @@
   "subtitles.entity.cushion.place": "Cushion placed",
   "subtitles.entity.cushion.sit": "Sits on Cushion",
 
-  "stat.falldrop_backport.sleep_in_straw_bed": "Times Slept in a Straw Bed"
+  "stat.falldrop_backport.sleep_in_straw_bed": "Times Slept in a Straw Bed",
+  "jukebox_song.minecraft.flurry": "Flurry",
+  "advancements.adventure.what_goes_around_comes_around.title": "What Goes Around Comes Around",
+  "advancements.adventure.what_goes_around_comes_around.description": "Kill a Frostbite using an Ice Ball"
 }

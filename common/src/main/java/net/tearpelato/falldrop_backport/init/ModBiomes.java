@@ -8,15 +8,17 @@ import net.tearpelato.falldrop_backport.Constants;
 import net.tearpelato.falldrop_backport.worldgen.biome.ModOverworldBiomes;
 import net.tearpelato.falldrop_backport.worldgen.biome.region.OverworldRegion;
 import terrablender.api.Regions;
+import terrablender.api.SurfaceRuleManager;
 
 
 public class ModBiomes {
 
     public static final ResourceKey<Biome> DAPPLED_FOREST = registerBiomeKey("dappled_forest");
+    public static final ResourceKey<Biome> ICE_CAVES = registerBiomeKey("ice_caves");
 
         public static void registerBiomes() {
         Regions.register(new OverworldRegion(Constants.id("overworld"), 20));
-
+           // SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD,Constants.NAMESPACE,ModSurfaceRules.makeRules());
     }
 
 
@@ -25,7 +27,7 @@ public class ModBiomes {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
 
         register(context, DAPPLED_FOREST, ModOverworldBiomes.dappledForest(placedFeatures, carver));
-
+        register(context, ICE_CAVES, ModOverworldBiomes.iceCaves(placedFeatures,carver));
 
     }
 

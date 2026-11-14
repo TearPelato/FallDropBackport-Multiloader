@@ -137,6 +137,40 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.SHELF_MUSHROOM.get());
                         output.accept(ModBlocks.STRAW_BED.get());
 
+                        output.accept(ModItems.FLURRY_MUSIC_DISC.get());
+                        output.accept(ModItems.FROSTBITE_SPAWN_EGG.get());
+
+                        output.accept(ModItems.ICE_BALL.get());
+                        output.accept(ModBlocks.ICE_CRYSTAL.get());
+                        output.accept(ModBlocks.ICICLE.get());
+                        output.accept(ModBlocks.BRITTLE_ICE.get());
+                        output.accept(ModBlocks.PACKED_ICE_BRICKS.get());
+                        output.accept(ModBlocks.PACKED_ICE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.PACKED_ICE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.PACKED_ICE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_PACKED_ICE.get());
+
+                        output.accept(ModBlocks.SNOW_BRICKS.get());
+                        output.accept(ModBlocks.SNOW_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.SNOW_BRICK_SLAB.get());
+                        output.accept(ModBlocks.SNOW_BRICK_WALL.get());
+
+                        output.accept(Blocks.CALCITE);
+                        output.accept(ModBlocks.CALCITE_STAIRS.get());
+                        output.accept(ModBlocks.CALCITE_SLAB.get());
+                        output.accept(ModBlocks.CALCITE_WALL.get());
+                        output.accept(ModBlocks.CALCITE_PILLAR.get());
+
+                        output.accept(ModBlocks.POLISHED_CALCITE.get());
+                        output.accept(ModBlocks.POLISHED_CALCITE_STAIRS.get());
+                        output.accept(ModBlocks.POLISHED_CALCITE_SLAB.get());
+                        output.accept(ModBlocks.POLISHED_CALCITE_WALL.get());
+
+                        output.accept(ModBlocks.POLISHED_CALCITE_BRICKS.get());
+                        output.accept(ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.POLISHED_CALCITE_BRICK_WALL.get());
+
                     }).build()
     );
 

@@ -172,6 +172,191 @@ public class FabricSoundProvider extends FabricSoundsProvider {
                 .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/leaf_litter/step5")))
                 .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/leaf_litter/step6"))));
 
+        exporter.add(ModSounds.ICE_BLOCK_AMBIENT.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.ice.ambient")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice/ambient1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice/ambient2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice/ambient3"))));
+
+        exporter.add(ModSounds.FROSTBITE_AMBIENT.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.frostbite.ambient")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/ambient1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/ambient2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/ambient3"))));
+
+        exporter.add(ModSounds.FROSTBITE_DEATH.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.frostbite.death")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/death"))));
+
+        exporter.add(ModSounds.FROSTBITE_HURT.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.frostbite.hurt")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/hurt1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/hurt2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/hurt3"))));
+
+        exporter.add(ModSounds.FROSTBITE_STEP.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.frostbite.step")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/step1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/step2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/step3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/step4"))));
+
+        exporter.add(ModSounds.ICE_BALL_BREAK.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.ice_ball.break")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/ice_ball/break1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/ice_ball/break2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/ice_ball/break3"))));
+
+        exporter.add(ModSounds.ICE_BALL_THROW.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.ice_ball.throw")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/ice_ball/throw1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/ice_ball/throw2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/ice_ball/throw3"))));
+
+        exporter.add(ModSounds.ZOMBIE_CONVERTED_TO_FROSTBITE.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.zombie.converted_to_frostbite")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/zombie/converted_to_frostbite"))));
+
+        exporter.add(ModSounds.FROSTBITE_CONVERTED_TO_ZOMBIE.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.frostbite.converted_to_zombie")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("entity/frostbite/converted_to_zombie"))));
+
+        exporter.add(ModSounds.APPLY_EFFECT_FREEZING.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.mob_effect.freezing")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("event/mob_effect/freezing"))));
+
+        exporter.add(ModSounds.BRITTLE_ICE_BREAK.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.break")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/break1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/break2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/break3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/break4"))));
+
+        exporter.add(ModSounds.BRITTLE_ICE_HIT.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.hit")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/hit1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/hit2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/hit3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/hit4"))));
+
+        exporter.add(ModSounds.BRITTLE_ICE_CRACK.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.brittle_ice.crack")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/crack1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/crack2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/crack3"))));
+
+        exporter.add(ModSounds.BRITTLE_ICE_PLACE.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.place")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/place1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/place2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/place3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/place4"))));
+
+        exporter.add(ModSounds.BRITTLE_ICE_STEP.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.footsteps")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/step1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/step2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/step3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/brittle_ice/step4"))));
+
+        exporter.add(ModSounds.ICICLE_BREAK.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.break")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/break1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/break2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/break3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/break4"))));
+
+        exporter.add(ModSounds.ICICLE_HIT.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.hit")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/hit1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/hit2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/hit3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/hit4"))));
+
+        exporter.add(ModSounds.ICICLE_LAND.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.icicle.land")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/land1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/land2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/land3"))));
+
+        exporter.add(ModSounds.ICICLE_PLACE.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.place")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/place1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/place2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/place3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/place4"))));
+
+        exporter.add(ModSounds.ICICLE_STEP.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.footsteps")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/step1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/step2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/step3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/icicle/step4"))));
+
+        exporter.add(ModSounds.ICE_CRYSTAL_BREAK.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.break")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/break1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/break2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/break3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/break4"))));
+
+        exporter.add(ModSounds.ICE_CRYSTAL_HIT.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.hit")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/hit1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/hit2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/hit3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/hit4"))));
+
+        exporter.add(ModSounds.ICE_CRYSTAL_AMBIENT.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.minecraft.ice_crystal.ambient")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/ambient1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/ambient2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/ambient3"))));
+
+        exporter.add(ModSounds.ICE_CRYSTAL_PLACE.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.place")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/place1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/place2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/place3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/place4"))));
+
+        exporter.add(ModSounds.ICE_CRYSTAL_STEP.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.footsteps")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/step1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/step2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/step3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/ice_crystal/step4"))));
+
+        exporter.add(ModSounds.PACKED_ICE_BREAK.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.break")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/break1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/break2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/break3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/break4"))));
+
+        exporter.add(ModSounds.PACKED_ICE_HIT.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.hit")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/hit1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/hit2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/hit3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/hit4"))));
+
+        exporter.add(ModSounds.PACKED_ICE_PLACE.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.place")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/place1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/place2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/place3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/place4"))));
+
+        exporter.add(ModSounds.PACKED_ICE_STEP.get(), SoundTypeBuilder.of()
+                .subtitle("sounds.block.generic.footsteps")
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/step1")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/step2")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/step3")))
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("block/packed_ice/step4"))));
+
+        exporter.add(ModSounds.MUSIC_DISC_FLURRY.get(), SoundTypeBuilder.of()
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Constants.vanilla("records/flurry")).stream(true)));
     }
 
     @Override

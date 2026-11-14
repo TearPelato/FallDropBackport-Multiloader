@@ -7,7 +7,9 @@
   "mixins": [
     "ExplorationMapFunctionMixin",
     "LivingEntityMixin",
-    "MapItemSavedDataMixin"
+    "MapItemSavedDataMixin",
+    "NoiseBasedChunkGeneratorMixin",
+    "SurfaceContextMixin"
   ],
   "client": [
     "ItemModelResolverMixin",
