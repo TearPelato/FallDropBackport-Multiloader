@@ -221,11 +221,12 @@ public class CommonBlockTagsProvider extends IntrinsicHolderTagsProvider<Block> 
                 .add(Blocks.MAGMA_BLOCK);
 
         tag(ModTags.Blocks.ICE_CAVE_ORE_REPLACEABLES)
-                .addTag(BlockTags.STONE_ORE_REPLACEABLES)
-                .addTag(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+                .addOptionalTag(BlockTags.STONE_ORE_REPLACEABLES)
+                .addOptionalTag(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         tag(ModTags.Blocks.ICE_CREVASSE_REPLACEABLES)
-                .addTag(BlockTags.BASE_STONE_OVERWORLD)
+                .add(Blocks.MAGMA_BLOCK)
+                .addOptionalTag(BlockTags.BASE_STONE_OVERWORLD)
                 .add(Blocks.PACKED_ICE)
                 .add(Blocks.ICE)
                 .add(Blocks.BLUE_ICE)
@@ -233,7 +234,7 @@ public class CommonBlockTagsProvider extends IntrinsicHolderTagsProvider<Block> 
                 .add(Blocks.CALCITE);
 
         tag(ModTags.Blocks.LARGE_ICICLE_REPLACEABLE)
-                .addTag(BlockTags.BASE_STONE_OVERWORLD)
+                .addOptionalTag(BlockTags.BASE_STONE_OVERWORLD)
                 .add(Blocks.PACKED_ICE)
                 .add(Blocks.ICE)
                 .add(Blocks.BLUE_ICE)

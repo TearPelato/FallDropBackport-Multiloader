@@ -1,12 +1,15 @@
 package net.tearpelato.falldrop_backport;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.tearpelato.craftcorelib.api.registry.ObjectRegistries;
+import net.tearpelato.falldrop_backport.entity.client.custom.Frostbite;
 import net.tearpelato.falldrop_backport.fabric.init.ModFlammableBlocks;
 import net.tearpelato.falldrop_backport.fabric.init.ModFuels;
 import net.tearpelato.falldrop_backport.fabric.init.ModStrippableBlocks;
 import net.tearpelato.falldrop_backport.init.*;
+import terrablender.api.SurfaceRuleManager;
 import terrablender.api.TerraBlenderApi;
 
 public class FallDropBackport implements ModInitializer, TerraBlenderApi {
@@ -30,8 +33,10 @@ public class FallDropBackport implements ModInitializer, TerraBlenderApi {
         ModTreeDecoratorType.init();
         ModEntityDataSerializer.init();
         ModFeatures.init();
+        ModMaterialConditions.init();
 
         ObjectRegistries.createAll(Constants.NAMESPACE);
+
 
         ModFlammableBlocks.init();
         ModStrippableBlocks.init();

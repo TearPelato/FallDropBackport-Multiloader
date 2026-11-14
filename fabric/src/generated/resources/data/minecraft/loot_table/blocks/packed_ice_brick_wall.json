@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:packed_ice_bricks_wall"
+          "name": "minecraft:packed_ice_brick_wall"
         }
       ],
       "rolls": 1.0

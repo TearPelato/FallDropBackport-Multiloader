@@ -9,6 +9,7 @@ import net.tearpelato.falldrop_backport.datagen.*;
 import net.tearpelato.falldrop_backport.datagen.villager.CommonVillagerTradesTagsProvider;
 import net.tearpelato.falldrop_backport.datagen.villager.CommonWanderingTraderTrades;
 import net.tearpelato.falldrop_backport.init.ModBiomes;
+import net.tearpelato.falldrop_backport.init.ModJukeboxSongs;
 import net.tearpelato.falldrop_backport.init.ModNoises;
 import net.tearpelato.falldrop_backport.worldgen.ModConfiguredFeatures;
 import net.tearpelato.falldrop_backport.worldgen.ModPlacedFeatures;
@@ -38,6 +39,7 @@ public class FallDropBackportDatagen implements DataGeneratorEntrypoint {
         registryBuilder.add(Registries.BIOME, ModBiomes::bootstrap);
         registryBuilder.add(Registries.VILLAGER_TRADE, CommonWanderingTraderTrades::bootstrap);
         registryBuilder.add(Registries.NOISE, ModNoises::bootstrap);
+        registryBuilder.add(Registries.JUKEBOX_SONG, ModJukeboxSongs::bootstrap);
 
     }
 }
