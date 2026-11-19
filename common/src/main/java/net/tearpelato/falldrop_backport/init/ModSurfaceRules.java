@@ -15,25 +15,33 @@ public class ModSurfaceRules {
 
     public static SurfaceRules.RuleSource makeRules() {
         SurfaceRules.RuleSource calcite = SurfaceRules.state(Blocks.CALCITE.defaultBlockState());
-        SurfaceRules.RuleSource packed_ice = SurfaceRules.state(Blocks.PACKED_ICE.defaultBlockState());
-        SurfaceRules.ConditionSource stonePocket = SurfaceRules.noiseCondition(Noises.GRAVEL, 0.25D, 1.0D);
+        SurfaceRules.RuleSource packedIce = SurfaceRules.state(Blocks.PACKED_ICE.defaultBlockState());
         SurfaceRules.RuleSource stone = SurfaceRules.state(Blocks.STONE.defaultBlockState());
+
+        SurfaceRules.RuleSource iceCaveBands = SurfaceRules.sequence(
+                band(-0.6F, -0.5F, calcite),
+                band(-0.5F,  0.2F, packedIce),
+                band( 0.2F,  0.3F, calcite),
+                band( 0.3F,  0.5F, packedIce),
+                band( 0.5F,  0.7F, calcite)
+        );
 
         return SurfaceRules.sequence(
                 SurfaceRules.ifTrue(
                         SurfaceRules.isBiome(ModBiomes.ICE_CAVES),
                         SurfaceRules.sequence(
                                 bedrock(),
-                                SurfaceRules.ifTrue(noiseCondition3d(ModNoises.ICE_CAVE_GRADIENT, -0.6F, -0.5F), calcite),
-                                SurfaceRules.ifTrue(noiseCondition3d(ModNoises.ICE_CAVE_GRADIENT, -0.5F, 0.2F), packed_ice),
-                                SurfaceRules.ifTrue(noiseCondition3d(ModNoises.ICE_CAVE_GRADIENT, 0.2F, 0.3F), calcite),
-                                SurfaceRules.ifTrue(noiseCondition3d(ModNoises.ICE_CAVE_GRADIENT, 0.3F, 0.5F), packed_ice),
-                                SurfaceRules.ifTrue(noiseCondition3d(ModNoises.ICE_CAVE_GRADIENT, 0.5F, 0.7F), calcite),
+                                iceCaveBands,
                                 SurfaceRules.ifTrue(SurfaceRules.abovePreliminarySurface(), stone)
                         )
                 )
         );
     }
+
+    private static SurfaceRules.RuleSource band(float min, float max, SurfaceRules.RuleSource block) {
+        return SurfaceRules.ifTrue(noiseCondition3d(ModNoises.ICE_CAVE_GRADIENT, (double) min, (double) max), block);
+    }
+
 
     public static SurfaceRules.ConditionSource noiseCondition3d(ResourceKey<NormalNoise.NoiseParameters> noise, double minRange, double maxRange) {
         return new SpatialNoiseThresholdConditionSource(noise, minRange, maxRange);

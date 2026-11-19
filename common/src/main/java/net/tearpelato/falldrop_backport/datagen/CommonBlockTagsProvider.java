@@ -68,8 +68,15 @@ public class CommonBlockTagsProvider extends IntrinsicHolderTagsProvider<Block> 
                 .add(ModBlocks.MAGENTA_CONCRETE_SLAB.get())
                 .add(ModBlocks.PINK_CONCRETE_SLAB.get());
 
+        tag(BlockTags.MINEABLE_WITH_HOE).add(ModBlocks.STRAW_BED.get());
 
         tag(BlockTags.LOGS)
+                .add(ModBlocks.POPLAR_LOG.get())
+                .add(ModBlocks.POPLAR_WOOD.get())
+                .add(ModBlocks.STRIPPED_POPLAR_WOOD.get())
+                .add(ModBlocks.STRIPPED_POPLAR_LOG.get());
+
+        tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.POPLAR_LOG.get())
                 .add(ModBlocks.POPLAR_WOOD.get())
                 .add(ModBlocks.STRIPPED_POPLAR_WOOD.get())
@@ -161,6 +168,7 @@ public class CommonBlockTagsProvider extends IntrinsicHolderTagsProvider<Block> 
         tag(BlockTags.FLOWER_POTS)
                 .add(ModBlocks.POPLAR_SAPLING_POTTED.get())
                 .add(ModBlocks.RED_SHRUB_POTTED.get());
+        tag(BlockTags.SAPLINGS).add(ModBlocks.POPLAR_SAPLING.get());
 
         tag(BlockTags.WOODEN_BUTTONS).add(ModBlocks.POPLAR_BUTTON.get());
         tag(BlockTags.WOODEN_DOORS).add(ModBlocks.POPLAR_DOOR.get());
@@ -169,6 +177,11 @@ public class CommonBlockTagsProvider extends IntrinsicHolderTagsProvider<Block> 
         tag(BlockTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.POPLAR_PRESSURE_PLATE.get());
         tag(BlockTags.WOODEN_STAIRS).add(ModBlocks.POPLAR_STAIRS.get());
         tag(BlockTags.WOODEN_TRAPDOORS).add(ModBlocks.POPLAR_TRAPDOOR.get());
+        tag(BlockTags.WOODEN_STAIRS).add(ModBlocks.POPLAR_STAIRS.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.POPLAR_FENCE_GATE.get());
+        tag(BlockTags.SIGNS).add(ModBlocks.POPLAR_SIGN.get());
+        tag(BlockTags.ALL_HANGING_SIGNS).add(ModBlocks.POPLAR_HANGING_SIGN.get());
+       tag(BlockTags.PLANKS).add(ModBlocks.POPLAR_PLANKS.get());
 
         tag(BlockTags.WOOL)
                 .add(ModBlocks.WHITE_WOOL_STAIRS.get())

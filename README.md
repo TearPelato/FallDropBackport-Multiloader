@@ -11,6 +11,7 @@ This mod backport all  the features from 26.3 and 26.4 drops to previous version
 - Straw Bed
 - Stats
 - Wool and Concrete Sets
+
 ### Deep Freeze
 - Ice Caves
 - Snow,Calcite,Packed Ice sets
@@ -24,7 +25,7 @@ This mod backport all  the features from 26.3 and 26.4 drops to previous version
 - More Features under Development
 
 
-  # Supported Versions
+# Supported Versions
   1.5.0 the upcoming update is the last one this mod will recive.
   - 26.1.2 -> Don't ask for Chaos Cubed backport it will not come
   - 26.2 

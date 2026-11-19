@@ -62,22 +62,22 @@ public class ModBlocks {
             properties -> new ModStairBlock(Blocks.PINK_WOOL.defaultBlockState(), properties));
 
 
-    public static final ObjectRegistries<Block> WHITE_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("white_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> LIGHT_GRAY_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("light_gray_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> GRAY_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("gray_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> BLACK_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("black_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> BROWN_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("brown_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> RED_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("red_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> ORANGE_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("orange_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> YELLOW_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("yellow_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> LIME_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("lime_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> GREEN_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("green_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> CYAN_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("cyan_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> LIGHT_BLUE_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("light_blue_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> BLUE_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("blue_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> PURPLE_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("purple_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> MAGENTA_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("magenta_wool_slab"), SlabBlock::new);
-    public static final ObjectRegistries<Block> PINK_WOOL_SLAB = ObjectRegistries.registerBlock(Constants.vanilla("pink_wool_slab"), SlabBlock::new);
+    public static final ObjectRegistries<Block> WHITE_WOOL_SLAB = registerCopy("white_wool_slab",Blocks.WHITE_WOOL,SlabBlock::new);
+    public static final ObjectRegistries<Block> LIGHT_GRAY_WOOL_SLAB = registerCopy("light_gray_wool_slab",Blocks.LIGHT_GRAY_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> GRAY_WOOL_SLAB = registerCopy("gray_wool_slab",Blocks.GRAY_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> BLACK_WOOL_SLAB = registerCopy("black_wool_slab",Blocks.BLACK_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> BROWN_WOOL_SLAB = registerCopy("brown_wool_slab",Blocks.BROWN_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> RED_WOOL_SLAB = registerCopy("red_wool_slab",Blocks.RED_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> ORANGE_WOOL_SLAB = registerCopy("orange_wool_slab",Blocks.ORANGE_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> YELLOW_WOOL_SLAB = registerCopy("yellow_wool_slab",Blocks.YELLOW_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> LIME_WOOL_SLAB = registerCopy("lime_wool_slab",Blocks.LIME_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> GREEN_WOOL_SLAB = registerCopy("green_wool_slab",Blocks.GREEN_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> CYAN_WOOL_SLAB = registerCopy("cyan_wool_slab",Blocks.CYAN_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> LIGHT_BLUE_WOOL_SLAB = registerCopy("light_blue_wool_slab",Blocks.LIGHT_BLUE_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> BLUE_WOOL_SLAB = registerCopy("blue_wool_slab",Blocks.BLUE_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> PURPLE_WOOL_SLAB = registerCopy("purple_wool_slab",Blocks.PURPLE_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> MAGENTA_WOOL_SLAB = registerCopy("magenta_wool_slab",Blocks.MAGENTA_WOOL, SlabBlock::new);
+    public static final ObjectRegistries<Block> PINK_WOOL_SLAB = registerCopy("pink_wool_slab",Blocks.PINK_WOOL, SlabBlock::new);
 
     //Concrete variants
     public static final ObjectRegistries<Block> WHITE_CONCRETE_STAIRS = ObjectRegistries.registerBlock(Constants.vanilla("white_concrete_stairs"),

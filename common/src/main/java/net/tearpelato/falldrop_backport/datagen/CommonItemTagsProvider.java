@@ -7,6 +7,7 @@ import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.tearpelato.falldrop_backport.init.ModBlocks;
+import net.tearpelato.falldrop_backport.init.ModItems;
 import net.tearpelato.falldrop_backport.init.ModTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -34,6 +35,12 @@ public class CommonItemTagsProvider extends IntrinsicHolderTagsProvider<Item> {
         tag(ItemTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.POPLAR_PRESSURE_PLATE.get().asItem());
         tag(ItemTags.WOODEN_STAIRS).add(ModBlocks.POPLAR_STAIRS.get().asItem());
         tag(ItemTags.WOODEN_TRAPDOORS).add(ModBlocks.POPLAR_TRAPDOOR.get().asItem());
+        tag(ItemTags.WOODEN_STAIRS).add(ModBlocks.POPLAR_STAIRS.get().asItem());
+        tag(ItemTags.FENCE_GATES).add(ModBlocks.POPLAR_FENCE_GATE.get().asItem());
+        tag(ItemTags.SIGNS).add(ModBlocks.POPLAR_SIGN.get().asItem());
+        tag(ItemTags.HANGING_SIGNS).add(ModBlocks.POPLAR_HANGING_SIGN.get().asItem());
+        tag(ItemTags.BOATS).add(ModItems.POPLAR_BOAT.get());
+        tag(ItemTags.CHEST_BOATS).add(ModItems.POPLAR_CHEST_BOAT.get());
 
         tag(ModTags.Items.WOOL_SET)
                 .add(ModBlocks.WHITE_WOOL_STAIRS.get().asItem())

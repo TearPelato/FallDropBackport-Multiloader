@@ -6,6 +6,8 @@
   "compatibilityLevel": "JAVA_18",
   "mixins": [
     "ExplorationMapFunctionMixin",
+    "JukeboxBlockEntityMixin",
+    "JukeboxBlockMixin",
     "LivingEntityMixin",
     "MapItemSavedDataMixin",
     "NoiseBasedChunkGeneratorMixin",
